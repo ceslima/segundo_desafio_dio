@@ -27,7 +27,7 @@ def calcular_nivel(vitorias, derrotas):
   else:
     nivel = "Imortal"
 
-  return f"O Herói tem um saldo de {saldo_vitorias} e está no nível de {nivel}"
+  return f"\n - O Herói tem um saldo de {saldo_vitorias} e está no nível de :  {nivel}\n"
 
 # Testes
 if __name__ == "__main__":
@@ -40,8 +40,10 @@ if __name__ == "__main__":
   print(calcular_nivel(110, 5))  # Saída: O Herói tem um saldo de 105 e está no nível de Imortal
 
   # Exemplo de Interatividade (opcional)
-  vitorias = int(input("Digite o número de vitórias: "))
-  derrotas = int(input("Digite o número de derrotas: "))
+  vitorias = int(input("Digite o número de vitórias: \n"))
+  
+  derrotas = int(input("Digite o número de derrotas:\n "))
+  
   resultado = calcular_nivel(vitorias, derrotas)
   
   print(resultado)
