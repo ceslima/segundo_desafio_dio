@@ -1,14 +1,14 @@
 def calcular_nivel(vitorias, derrotas):
+  
   """
   Calcula o saldo de vitórias e determina o nível do jogador.
-
   Args:
     vitorias: O número de vitórias do jogador.
     derrotas: O número de derrotas do jogador.
-
   Returns:
     Uma string formatada indicando o saldo de vitórias e o nível do jogador.
   """
+  
   saldo_vitorias = vitorias - derrotas
   nivel = ""
 
@@ -28,7 +28,6 @@ def calcular_nivel(vitorias, derrotas):
     nivel = "Imortal"
 
   return f"O Herói tem um saldo de {saldo_vitorias} e está no nível de {nivel}"
-
 
 # Testes
 if __name__ == "__main__":
